@@ -75,6 +75,7 @@ def index():
                             mydict = {"Product": search, "Name": name, "Rating": rating, "CommentHead": heading,"Comment":comment}
                             #table.insert_one(mydict)
                             review_list.append(mydict)
+            print(review_list)
             return render_template('results.html',reviews=review_list)
         except Exception as e:
             print(e)
