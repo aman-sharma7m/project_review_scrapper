@@ -74,6 +74,7 @@ def index():
                                 name = 'no name'
                             mydict = {"Product": search, "Name": name, "Rating": rating, "CommentHead": heading,"Comment":comment}
                             #table.insert_one(mydict)
+                            #print(mydict)
                             review_list.append(mydict)
                             render_template('results.html', reviews=review_list)
             #print(review_list)
